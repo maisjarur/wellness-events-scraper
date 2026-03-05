@@ -14,7 +14,7 @@ Discover wellness and conscious living events, classes, and workshops in any loc
 ## 🎯 Use Cases
 
 - **Event Aggregators**: Build wellness event discovery platforms
-- **Community Builders**: Find events for AI Brunch Club or similar communities
+- **Community Builders**: Find events for similar communities
 - **Marketing Research**: Analyze wellness event trends and pricing
 - **Personal Use**: Discover yoga classes, meditation sessions, and workshops near you
 - **Business Development**: Identify wellness businesses and their offerings
@@ -189,12 +189,12 @@ apify push
 
 ## 🎯 Integration Ideas
 
-### With AI Brunch Club App
+### With App
 
-Perfect integration for your AI Brunch Club app:
+Perfect integration for apps:
 
 1. **Event Discovery**: Use this Actor to find wellness events in user's location
-2. **Automated Posting**: Create AI Brunch Club events based on discovered wellness events
+2. **Automated Posting**: Create events based on discovered wellness events
 3. **Multi-Channel Sharing**: Extract event details → format with AI → share to social media
 4. **Recurring Scrapes**: Schedule weekly runs to keep events fresh
 
