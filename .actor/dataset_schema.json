@@ -1,0 +1,170 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Wellness Events Overview",
+            "description": "All discovered wellness events and classes",
+            "transformation": {
+                "fields": [
+                    "eventName",
+                    "eventType",
+                    "eventDate",
+                    "eventTime",
+                    "isOnline",
+                    "providerName",
+                    "location",
+                    "price",
+                    "source",
+                    "socialHandle",
+                    "eventUrl",
+                    "registrationUrl"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "eventName": {
+                        "label": "Event Name",
+                        "format": "text"
+                    },
+                    "eventType": {
+                        "label": "Type",
+                        "format": "text"
+                    },
+                    "eventDate": {
+                        "label": "Date",
+                        "format": "date"
+                    },
+                    "eventTime": {
+                        "label": "Time",
+                        "format": "text"
+                    },
+                    "isOnline": {
+                        "label": "Online",
+                        "format": "boolean"
+                    },
+                    "providerName": {
+                        "label": "Provider",
+                        "format": "text"
+                    },
+                    "location": {
+                        "label": "Location",
+                        "format": "text"
+                    },
+                    "price": {
+                        "label": "Price",
+                        "format": "text"
+                    },
+                    "source": {
+                        "label": "Source",
+                        "format": "text"
+                    },
+                    "socialHandle": {
+                        "label": "Social Handle",
+                        "format": "text"
+                    },
+                    "eventUrl": {
+                        "label": "Event Page",
+                        "format": "link"
+                    },
+                    "registrationUrl": {
+                        "label": "Register",
+                        "format": "link"
+                    }
+                }
+            }
+        },
+        "by-source": {
+            "title": "Events by Source",
+            "description": "Events grouped by data source (Website, Instagram, TikTok)",
+            "transformation": {
+                "fields": [
+                    "source",
+                    "eventName",
+                    "providerName",
+                    "socialHandle",
+                    "price",
+                    "eventDate",
+                    "eventUrl"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "source": {
+                        "label": "Source",
+                        "format": "text"
+                    },
+                    "eventName": {
+                        "label": "Event",
+                        "format": "text"
+                    },
+                    "providerName": {
+                        "label": "Provider",
+                        "format": "text"
+                    },
+                    "socialHandle": {
+                        "label": "Social Handle",
+                        "format": "text"
+                    },
+                    "price": {
+                        "label": "Price",
+                        "format": "text"
+                    },
+                    "eventDate": {
+                        "label": "Date",
+                        "format": "date"
+                    },
+                    "eventUrl": {
+                        "label": "Link",
+                        "format": "link"
+                    }
+                }
+            }
+        },
+        "by-provider": {
+            "title": "Events by Provider",
+            "description": "Events grouped by wellness provider",
+            "transformation": {
+                "fields": [
+                    "providerName",
+                    "providerType",
+                    "providerUrl",
+                    "providerPhone",
+                    "providerEmail",
+                    "eventCount"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "providerName": {
+                        "label": "Provider",
+                        "format": "text"
+                    },
+                    "providerType": {
+                        "label": "Type",
+                        "format": "text"
+                    },
+                    "providerUrl": {
+                        "label": "Website",
+                        "format": "link"
+                    },
+                    "providerPhone": {
+                        "label": "Phone",
+                        "format": "text"
+                    },
+                    "providerEmail": {
+                        "label": "Email",
+                        "format": "text"
+                    },
+                    "eventCount": {
+                        "label": "Events Found",
+                        "format": "number"
+                    }
+                }
+            }
+        }
+    }
+}

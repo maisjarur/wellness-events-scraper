@@ -1,0 +1,18 @@
+{
+	"$schema": "https://apify.com/schemas/v1/actor.ide.json",
+	"actorSpecification": 1,
+	"name": "wellness-events-scraper",
+	"title": "Wellness Events Scraper",
+	"description": "Discover wellness and conscious living events, classes, and workshops. Finds providers (yoga studios, meditation centers, holistic health practitioners) and scrapes their events both online and in-person.",
+	"version": "1.0.0",
+	"buildTag": "latest",
+	"meta": {
+		"templateId": "ts-empty",
+		"generatedBy": "Claude Code with Claude Sonnet 4.5"
+	},
+	"dockerfile": "../Dockerfile",
+	"storages": {
+		"dataset": "./dataset_schema.json"
+	},
+	"input": "./input_schema.json"
+}
